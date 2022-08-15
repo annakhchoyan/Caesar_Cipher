@@ -4,9 +4,9 @@ std::string encryption(std::string string, int shift)
 {
 	std::string result = "";
 
-	for(int i = 0; i < string.length(); ++i)
+	for (int i = 0; i < string.length(); ++i)
 	{
-		if(isupper(string[i]))
+		if (isupper(string[i]))
 		{
 			result += char(int(string[i] + shift - 65) % 26 + 65);
 		}
